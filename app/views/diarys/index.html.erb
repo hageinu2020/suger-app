@@ -1,0 +1,106 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <title>Suger Daiary</title>
+  </head>
+  <body>
+    <header>
+      <div class="heading">
+        <h1 class="title"><%= "Suger Diary" %></h1>
+        <h2 class="sub-title"><%= "〜美味しいを変えていく〜"%></h2>
+      </div>
+      <div class="navbar">
+        <ul class="nav-lists">
+          <li><%= link_to '新規登録', "#", class: "sign-up" %></li>
+          <li><%= link_to 'ログイン', "#", class: "login" %></li>
+          <li><%= link_to '今日の一膳', "#", class: "day-list" %></li>
+          <li><%= link_to '記録する', "#", class: "save-list" %></li>
+        </ul>
+      </div>
+    </header>
+
+    <div class="contents">
+      <div class="first-view">
+        <%= image_tag "fd400704.jpg", class: "top-image"%>
+      </div>
+
+    <div class='select-reason-contents'>
+      <div class="suger-view">
+        <%= image_tag "suger.jpg", class: "suger-image"%>
+      <h2 class='title2'>
+      <%='人気の３機能' %>
+      </h2>
+      </div>
+      <ul class='reason-lists'>
+      <li class='list'>
+        <%=image_tag "heart1.jpg", class: "list-heart"%>
+        <%= image_tag "pc.jpg", class:"list-pict" %>
+        <h3 class='reason-list-text'>
+          毎日の食事を簡単に記録できる！(スマホでもPCでも)
+        </h3>
+      </li>
+      <li class='list'>
+        <%=image_tag "heart2.jpg", class: "list-heart"%>
+        <%= image_tag "lesipi.jpg", class:"list-pict" %>
+        <h3 class='reason-list-text'>
+          栄養士監修のレシピが毎日届く！！
+        </h3>
+      </li>
+      <li class='list'>
+        <%=image_tag "heart3.jpg", class: "list-heart"%>
+        <%= image_tag "cook.jpg", class:"list-pict" %>
+        <h3 class='reason-list-text'>
+          他のユーザーが作ったレシピの共有ができる！！！
+        </h3>
+      </li>
+    </ul>
+  </div>
+    </div>
+
+  <div class='itizen-contents'>
+    <div class='lavel'>
+    <%= image_tag "lavel.jpg", class: "itizen-lavel"%>
+    </div>
+    <ul class='itizen-list'>
+      <li class='list-a'>
+        <%= image_tag "itizen1.jpg", class:"itizen-pict" %>
+        <h3 class='itizen-list-text'>
+          今日の昼食
+        </h3>
+      </li>
+      <li class='list-b'>
+        <%= image_tag "itizen2.jpg", class:"itizen-pict" %>
+        <h3 class='itizen-list-text'>
+          カロリーオフな唐揚げ♡
+        </h3>
+      </li>
+      <li class='list-c'>
+        <%= image_tag "itizen3.jpg", class:"itizen-pict" %>
+        <h3 class='itizen-list-text'>
+          今日のおやつはちょっと贅沢に！
+        </h3>     
+       </li>
+    </ul>
+  </div>
+
+  <div class='store-btn'>
+    <div class='footer-view'>
+    <%= image_tag "footer.jpg", class: "footer-pic"%>
+    <%= link_to image_tag("https://linkmaker.itunes.apple.com/ja-jp/badge-lrg.svg?releaseDate=2011-09-21&kind=iossoftware&bubble=ios_apps", class:"apple-btn"), "#" %>
+    <%= link_to image_tag("dl-android.png", class:"google-btn"), "#" %>
+    <p class= "footer-text">さぁ、美味しいを変えていこう</p>
+    <h2 class='footer-text2'>
+    今すぐ無料ダウンロード！
+  </h2>
+    </div>
+  </div>
+
+
+
+    <footer>
+      <p>Copyright(C) Suger Daiary ALL RIGHT RESERVED.</p>
+    </footer>
+  </body>
+</html>
